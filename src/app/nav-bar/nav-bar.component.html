@@ -1,5 +1,5 @@
 <nav id="navbar">
-    <ul class="nav justify-content-center">
+    <ul class="nav">
         <li class="nav-item">
             <a class="nav-link active" routerLink="">HOME</a>
         </li>
@@ -7,10 +7,17 @@
             <a class="nav-link" routerLink="/about">ABOUT</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" routerLink="/experience">EXPERIENCE</a>
+            <a class="nav-link" routerLink="/resume">RESUME</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" routerLink="/interests">INTERESTS</a>
-        </li>
+        <li class="nav-item" ngbDropdown>
+            <a class="nav-link" style="cursor: pointer" ngbDropdownToggle id="navbarDropdown2" role="button">
+              INTERESTS
+            </a>
+            <div ngbDropdownMenu aria-labelledby="navbarDropdown2" class="dropdown-menu dropdown-menu-right">
+              <a ngbDropdownItem routerLink="/interests" (click)="$event.preventDefault()">MY INTERESTS</a>
+              <a ngbDropdownItem href="#" (click)="$event.preventDefault()">TRAVEL</a>
+              <a ngbDropdownItem href="#" (click)="$event.preventDefault()">COFFEE SHOPS</a>
+            </div>
+          </li>
     </ul>
 </nav>

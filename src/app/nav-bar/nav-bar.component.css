@@ -9,6 +9,10 @@ a {
     font-size: 13px;
 }
 
+a:hover { 
+    color: gray; 
+}
+
 #navbar { 
     padding: 15px 0px 15px 0px; 
 }

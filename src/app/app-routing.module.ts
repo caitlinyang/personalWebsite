@@ -9,7 +9,7 @@ import { InterestsComponent } from './interests/interests.component';
 const routes: Routes = [
   {path:"", component: HomeComponent},
   {path:"about", component: AboutComponent}, 
-  {path:"experience", component:ExperienceComponent},
+  {path:"resume", component:ExperienceComponent},
   {path:"interests", component:InterestsComponent}
 ];
 
